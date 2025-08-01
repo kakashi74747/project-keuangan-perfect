@@ -1,0 +1,44 @@
+/*
+=========================================
+ KODE KUSTOM UNTUK LAYOUT UANGMU APP
+=========================================
+*/
+
+/* Memberi sedikit padding pada body agar konten tidak menempel di atas */
+body {
+    padding-top: 56px; /* Sesuaikan dengan tinggi navbar Anda */
+}
+
+/* Mengatur agar navbar utama tetap di atas saat di-scroll */
+.sb-topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+/* Gaya untuk link navbar yang aktif */
+.sb-topnav .navbar-nav .nav-link.active {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* Gaya hover untuk semua link di navbar */
+.sb-topnav .navbar-nav .nav-link:hover {
+    color: #e9ecef;
+}
+
+/* === GAYA BARU UNTUK PEMISAH === */
+/* Membuat garis pemisah vertikal yang rapi sebelum item menu */
+.sb-topnav .navbar-nav .nav-item-separator {
+    margin-left: 0.8rem;
+    padding-left: 0.8rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+/* Menghilangkan padding default dari main content wrapper yang lama */
+#layoutDefault_content {
+    padding-left: 0;
+    transition: none;
+}
